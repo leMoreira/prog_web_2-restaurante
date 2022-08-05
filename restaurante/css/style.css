@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    background-color: blueviolet;
+    color: #fff;
+    position: relative;
+}
+
+header button.abrirMenu, button.fecharMenu{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    background-color: blueviolet;
+}
+
+header button.abrirMenu svg, button.fecharMenu svg{
+    color:#fff;
+}
+
+header button.fecharMenu {
+    display: none;
+}
+
+header .menu{
+    position: absolute;
+    top:100px;
+    width: 20%;
+    height: 80vh;
+    background-color:rgb(176, 138, 211);
+    padding: 30px;
+    margin-left: -70%;
+    transition: ease-out 0.5s;
+
+}
+
+header .menu ul{
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+header .menu ul li{
+    padding:2px 0;
+}
